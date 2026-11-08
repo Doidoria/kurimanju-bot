@@ -1,0 +1,14 @@
+node_modules/
+dist/
+
+# 비밀 정보
+.env
+.env.*
+!.env.example
+secrets/
+*serviceAccount*.json
+*firebase-adminsdk*.json
+
+# 로그
+logs/
+*.log

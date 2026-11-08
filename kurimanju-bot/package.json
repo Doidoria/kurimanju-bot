@@ -1,0 +1,30 @@
+{
+  "name": "kurimanju-bot",
+  "version": "0.1.0",
+  "private": true,
+  "description": "쿠리만쥬 - 디스코드 유틸리티 봇 (이모지 확대, 별명 변경, 입장 인사)",
+  "main": "dist/index.js",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "start:prod": "node dist/index.js --env=prod",
+    "deploy": "tsx src/deploy-commands.ts",
+    "deploy:prod": "tsx src/deploy-commands.ts --env=prod",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "^1.1.0",
+    "discord.js": "^14.28.1",
+    "dotenv": "^17.4.2",
+    "firebase-admin": "^14.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
+  }
+}
